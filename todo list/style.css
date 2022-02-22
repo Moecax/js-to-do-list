@@ -1,0 +1,106 @@
+body {
+  background-image: linear-gradient(120deg, #3b486b, #551f74);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+.todo-button {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: (0 px, 5px, 5px, 0px);
+  background-color: #494d5f;
+  color: #e5eaf5;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.6rem 1.3rem;
+  font-size: 1.5rem;
+  border: none;
+}
+form button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: #e5eaf5;
+  color: #494d5f;
+  font-size: 1.53rem;
+}
+.complete-button {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: (0 px, 5px, 5px, 0px);
+  background-color: rgb(53, 250, 103);
+  color: #e5eaf5;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  min-width: 30%;
+  list-style-type: none;
+}
+.todo {
+  margin: 0.5rem;
+  background: whitesmoke;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.todo li {
+  flex: 1;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+.complete-button:hover {
+  background-color: rgb(86, 255, 86);
+  color: #494d5f;
+  /* font-size: 1.53rem;*/
+}
+.delete-button {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: (0 px, 5px, 5px, 0px);
+  background-color: #fc821e;
+  color: #e5eaf5;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.delete-button:hover {
+  background-color: #eeca2b;
+  color: #494d5f;
+  /* font-size: 1.53rem;*/
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
